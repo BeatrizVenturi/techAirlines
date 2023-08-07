@@ -1,11 +1,10 @@
-
 export const listaMenu = [
   {
     id: 1,
     title: 'Paris',
     origin: 'São Paulo',
     destiny: 'Paris',
-    price: 1000.00,
+    price: 1000.0,
     img: 'https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80'
   },
   {
@@ -13,7 +12,7 @@ export const listaMenu = [
     title: 'Barcelona',
     origin: 'Curitiba',
     destiny: 'Barcelona',
-    price: 1000.00,
+    price: 1000.0,
     img: ''
   },
   {
@@ -21,7 +20,7 @@ export const listaMenu = [
     title: 'Londres',
     origin: 'São Paulo',
     destiny: 'Londres',
-    price: 1000.00,
+    price: 1000.0,
     img: ''
   },
   {
@@ -29,7 +28,7 @@ export const listaMenu = [
     title: 'Havana-Cuba',
     origin: 'São Paulo',
     destiny: '',
-    price: 1000.00,
+    price: 1000.0,
     img: 'Havana-Cuba'
   },
   {
@@ -37,7 +36,7 @@ export const listaMenu = [
     title: '',
     origin: '',
     destiny: '',
-    price: 1000.00,
+    price: 1000.0,
     img: ''
   },
   {
@@ -45,7 +44,7 @@ export const listaMenu = [
     title: '',
     origin: '',
     destiny: '',
-    price: 1000.00,
+    price: 1000.0,
     img: ''
   },
   {
@@ -53,7 +52,7 @@ export const listaMenu = [
     title: '',
     origin: '',
     destiny: '',
-    price: 1000.00,
+    price: 1000.0,
     img: ''
   },
   {
@@ -61,9 +60,7 @@ export const listaMenu = [
     title: '',
     origin: '',
     destiny: '',
-    price: 1000.00,
+    price: 1000.0,
     img: ''
   }
 ]
-
-
