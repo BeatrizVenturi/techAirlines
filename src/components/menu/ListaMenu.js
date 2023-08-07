@@ -6,7 +6,7 @@ export const listaMenu = [
     origin: 'São Paulo',
     destiny: 'Paris',
     price: 1000.00,
-    img: ''
+    img: 'https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80'
   },
   {
     id: 2,
