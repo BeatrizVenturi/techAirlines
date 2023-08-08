@@ -3,7 +3,6 @@
   <nav class="nav">
     
     <ul>
-     <li> <img src="TECHT.png" alt=""></li>
       <li><RouterLink to="/">Menu</RouterLink></li>
       <li><RouterLink to="/about">Hotéis</RouterLink></li>
     </ul>
@@ -15,8 +14,9 @@
 
 
 nav {
-  margin: 10 auto;
+  margin-left: 187px;
   background: #3253a8;
+  margin-top: -10px;
 
 }
 img{
