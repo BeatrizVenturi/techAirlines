@@ -1,7 +1,9 @@
 <script setup></script>
 <template>
   <nav class="nav">
+    
     <ul>
+     <li> <img src="TECHT.png" alt=""></li>
       <li><RouterLink to="/">Menu</RouterLink></li>
       <li><RouterLink to="/about">Hotéis</RouterLink></li>
     </ul>
@@ -15,6 +17,13 @@
 nav {
   margin: 10 auto;
   background: #3253a8;
+
+}
+img{
+  width: 100px;
+}
+li{
+  
 }
 
 nav::after {
@@ -38,7 +47,7 @@ nav ul li a {
   display: block;
   color: #ffefef;
   text-decoration: none;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   transition: all 0.3s ease-in-out;
 }
 
