@@ -42,7 +42,7 @@ main {
 p{
   text-align: center;
   color: white;
-  margin-top: -20px;
+  margin-top: -13px;
   
 }
 .imagem-tech {
@@ -52,7 +52,7 @@ p{
 
 .imagem-passagem {
   flex-shrink: 0;
-  /* margin: 20px 30px; */
+  margin: 20px 30px;
 }
 
 .box {
