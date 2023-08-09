@@ -10,19 +10,23 @@ import navBar from '@/components/navBar.vue'
   <main>
     <div class="box">
       <div class="imagem-tech">
-        <img src="TECHT.png" alt="" width="300px" height="300px">
+        <img src="TECHT.png" alt="" width="140px" height="140px">
       </div>
       <div class="imagem-passagem">
         <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
       <div class="imagem-passagem">
         <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
       <div class="imagem-passagem">
         <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
       <div class="imagem-passagem">
         <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
 
     </div>
@@ -35,14 +39,20 @@ main {
   display: flex;
   flex-direction: row;
 }
-.imagem-tech{
-  margin-top: -60px;
-  margin-left: -100px;
+p{
+  text-align: center;
+  color: white;
+  margin-top: -20px;
+  
 }
-.imagem-passagem {
+.imagem-tech {
+  margin-top: 15px;
+  margin-left: 25px;
+}
 
+.imagem-passagem {
   flex-shrink: 0;
-  margin: 20px 30px;
+  /* margin: 20px 30px; */
 }
 
 .box {
