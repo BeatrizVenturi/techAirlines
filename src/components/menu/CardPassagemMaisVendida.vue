@@ -1,5 +1,6 @@
 <script setup>
 import { listaMenu } from '@/components/menu/ListaMenu.js'
+
 </script>
 <template>
   <div class="card-passagensMenu" v-for="lista in listaMenu" :key="lista.id">
@@ -11,7 +12,11 @@ import { listaMenu } from '@/components/menu/ListaMenu.js'
       <p class="origin">Origem: {{ lista.origin }}</p>
       <p class="destiny">Destino: {{ lista.destiny }}</p>
     </div>
+    <div class="mb-button">
+
+    </div>
   </div>
+  
 </template>
 <style scoped>
 .card-passagensMenu {
@@ -51,4 +56,7 @@ import { listaMenu } from '@/components/menu/ListaMenu.js'
   width: 250px;
   height: 270px;
 }
+
+
+
 </style>
