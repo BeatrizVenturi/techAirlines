@@ -1,15 +1,27 @@
 export const listaMenu = [
   {
     id: 1,
-    title: 'Paris',
+    title: 'PARIS',
     origin: 'São Paulo',
     destiny: 'Paris',
     price: 1000.0,
-    img: 'https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80'
+    img: 'https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80',
+    obs: 'É o melhor destino de todos',
+    testemunhos: 'Foi a melhor viagem da minha vida',
+    ida: {
+      data: 'fdad',
+      horario: 'fkadsjkf',
+      aeroporto: 'VCP',
+      tempo: 'dfdk',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      
+    }
   },
   {
     id: 2,
-    title: 'Barcelona',
+    title: 'BARCELONA',
     origin: 'Curitiba',
     destiny: 'Barcelona',
     price: 1000.0,
@@ -17,7 +29,7 @@ export const listaMenu = [
   },
   {
     id: 3,
-    title: 'Londres',
+    title: 'LONDRES',
     origin: 'São Paulo',
     destiny: 'Londres',
     price: 1000.0,
@@ -25,7 +37,7 @@ export const listaMenu = [
   },
   {
     id: 4,
-    title: 'Havana-Cuba',
+    title: 'HAVANA-CUBA',
     origin: 'São Paulo',
     destiny: '',
     price: 1000.0,
@@ -64,3 +76,9 @@ export const listaMenu = [
     img: 'https://w0.peakpx.com/wallpaper/427/588/HD-wallpaper-cataratas-agua-cachoeira-fall-falls-foz-iguacu-nature-water-waterfall-thumbnail.jpg'
   }
 ]
+
+
+export function getPassagemPorId(id) {
+  const passagem =  listaMenu.find(l => l.id == id)
+  return passagem
+}

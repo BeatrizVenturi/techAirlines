@@ -1,8 +1,11 @@
 <script setup>
 import { listaMenu } from '@/components/menu/ListaMenu.js'
+import MButton from '@/components/MButton.vue';
+
 
 </script>
 <template>
+
   <div class="card-passagensMenu" v-for="lista in listaMenu" :key="lista.id">
     <div class="informacao-passagem">
       <div class="wrap-passagens">
@@ -13,7 +16,7 @@ import { listaMenu } from '@/components/menu/ListaMenu.js'
       <p class="destiny">Destino: {{ lista.destiny }}</p>
     </div>
     <div class="mb-button">
-
+      <MButton @click="$router.push({name: 'passagem', params: { id: lista.id }})"></MButton>
     </div>
   </div>
   
@@ -35,9 +38,9 @@ import { listaMenu } from '@/components/menu/ListaMenu.js'
 }
 
 .card-passagensMenu .title {
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 18px;
+  
+  margin-bottom: 1px;
+  font-size: xx-large;
   font-family: Bellefair;
 }
 
