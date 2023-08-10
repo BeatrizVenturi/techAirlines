@@ -1,5 +1,6 @@
 <script setup>
 import { listaMenu } from '@/components/menu/ListaMenu.js'
+import MButton from '@/components/MButton.vue';
 
 </script>
 <template>
@@ -13,7 +14,7 @@ import { listaMenu } from '@/components/menu/ListaMenu.js'
       <p class="destiny">Destino: {{ lista.destiny }}</p>
     </div>
     <div class="mb-button">
-
+      <MButton></MButton>
     </div>
   </div>
   
