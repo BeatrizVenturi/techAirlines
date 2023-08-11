@@ -18,18 +18,8 @@ h1 {
   border-radius: 30px;
   color: white;
   font-family: Bellefair;
-
-
   text-align: center;
-
 }
-
-main {
-  /* display: flex; */
-  flex-wrap: wrap;
-
-}
-
 .cards {
   display: flex;
   flex-direction: row;
