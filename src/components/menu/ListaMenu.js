@@ -6,17 +6,19 @@ export const listaMenu = [
     destiny: 'Paris',
     price: 1000.0,
     img: 'https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80',
-    obs: 'É o melhor destino de todos',
-    testemunhos: 'Foi a melhor viagem da minha vida',
     ida: {
-      data: 'fdad',
-      horario: 'fkadsjkf',
+      data: '10/08/23',
+      horario: '23:05h',
       aeroporto: 'VCP',
-      tempo: 'dfdk',
+      tempo: '10h50min',
       tipo: 'Voo direto'
     },
     volta: {
-      
+      data: '25/08/23',
+      horario: '22:15h',
+      aeroporto: 'ORY',
+      tempo: '11h35min',
+      tipo: 'Voo direto'
     }
   },
   {
@@ -25,7 +27,21 @@ export const listaMenu = [
     origin: 'Curitiba',
     destiny: 'Barcelona',
     price: 1000.0,
-    img: 'https://cdn.shopify.com/s/files/1/0410/9293/9926/files/La_sagrada_familia_gaudi_480x480.jpg?v=1649591835'
+    img: 'https://cdn.shopify.com/s/files/1/0410/9293/9926/files/La_sagrada_familia_gaudi_480x480.jpg?v=1649591835',
+    ida: {
+      data: '30/08/23',
+      horario: '21:05h',
+      aeroporto: 'VCP',
+      tempo: '9h50min',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      data: '04/09/23',
+      horario: '00:15h',
+      aeroporto: 'ORY',
+      tempo: '10h35min',
+      tipo: 'Voo direto'
+    }
   },
   {
     id: 3,
@@ -33,23 +49,66 @@ export const listaMenu = [
     origin: 'São Paulo',
     destiny: 'Londres',
     price: 1000.0,
-    img: 'https://lavidaesmara.com/wp-content/uploads/2021/02/roteiro-dia-londres.jpg'
+    img: 'https://lavidaesmara.com/wp-content/uploads/2021/02/roteiro-dia-londres.jpg',
+    ida: {
+      data: '10/08/23',
+      horario: '01:05h',
+      aeroporto: 'ORY',
+      tempo: '9h27min',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      data: '17/08/23',
+      horario: '02:15h',
+      aeroporto: 'ORY',
+      tempo: '10h35min',
+      tipo: 'Voo direto'
+    }
   },
   {
     id: 4,
     title: 'HAVANA-CUBA',
     origin: 'São Paulo',
-    destiny: '',
+    destiny: 'Havana',
     price: 1000.0,
-    img: 'https://sun-surfer.com/photos/2016/03/Havana-Cuba.jpg'
+    img: 'https://sun-surfer.com/photos/2016/03/Havana-Cuba.jpg',
+    ida: {
+      data: '16/02/24',
+      horario: '15:05h',
+      aeroporto: 'VCP',
+      tempo: '2h27min',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      data: '24/07/23',
+      horario: '02:15h',
+      aeroporto: 'ORY',
+      tempo: '1h35min',
+      tipo: 'Voo direto'
+    }
   },
   {
     id: 5,
     title: 'JERICOACOARA',
     origin: 'São Paulo',
-    destiny: '',
+    destiny: 'Jericoacoara',
     price: 1000.0,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAClmcPdKO094wNa8VafcaDY1Qlono_F5j3KsnNx4GcZrfAmaefOEL0d0iWfDJo80UME&usqp=CAU'
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAClmcPdKO094wNa8VafcaDY1Qlono_F5j3KsnNx4GcZrfAmaefOEL0d0iWfDJo80UME&usqp=CAU',
+    ida: {
+      data: '16/09/24',
+      horario: '12:05h',
+      aeroporto: 'VCP',
+      tempo: '7h27min',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      data: '24/09/23',
+      horario: '08:15h',
+      aeroporto: 'ORY',
+      tempo: '8h35min',
+      tipo: 'Voo direto'
+    }
+
   },
   {
     id: 6,
@@ -57,7 +116,21 @@ export const listaMenu = [
     origin: '',
     destiny: '',
     price: 1000.0,
-    img: 'https://www.umviajante.com.br/wp-content/uploads/2021/12/bonito-ms-top-passeios.jpg'
+    img: 'https://www.umviajante.com.br/wp-content/uploads/2021/12/bonito-ms-top-passeios.jpg',
+    ida: {
+      data: '18/07/24',
+      horario: '19:30h',
+      aeroporto: 'VCP',
+      tempo: '4h50min',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      data: '24/07/23',
+      horario: '06:25h',
+      aeroporto: 'ORY',
+      tempo: '1h40min',
+      tipo: 'Voo direto'
+    }
   },
   {
     id: 7,
@@ -65,7 +138,21 @@ export const listaMenu = [
     origin: '',
     destiny: '',
     price: 1000.0,
-    img: 'https://i0.wp.com/turismodeprimeira.com.br/wp-content/uploads/2022/02/cropped-bridge-6851672_1920.jpg?resize=360%2C600&ssl=1'
+    img: 'https://i0.wp.com/turismodeprimeira.com.br/wp-content/uploads/2022/02/cropped-bridge-6851672_1920.jpg?resize=360%2C600&ssl=1',
+    ida: {
+      data: '25/12/22',
+      horario: '23:00h',
+      aeroporto: 'VCP',
+      tempo: '3h00min',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      data: '07/01/24',
+      horario: '22:40h',
+      aeroporto: 'ORY',
+      tempo: '3h40min',
+      tipo: 'Voo direto'
+    }
   },
   {
     id: 8,
@@ -73,12 +160,26 @@ export const listaMenu = [
     origin: '',
     destiny: '',
     price: 1000.0,
-    img: 'https://w0.peakpx.com/wallpaper/427/588/HD-wallpaper-cataratas-agua-cachoeira-fall-falls-foz-iguacu-nature-water-waterfall-thumbnail.jpg'
+    img: 'https://w0.peakpx.com/wallpaper/427/588HD-wallpaper-cataratas-agua-cachoeira-fall-falls-foz-iguacu-nature-water-waterfall-thumbnail.jpg',
+    ida: {
+      data: '20/11/23',
+      horario: '15:00h',
+      aeroporto: 'VCP',
+      tempo: '2h30min',
+      tipo: 'Voo direto'
+    },
+    volta: {
+      data: '27/11/23',
+      horario: '10:00h',
+      aeroporto: 'ORY',
+      tempo: '1h50min',
+      tipo: 'Voo direto'
+    }
   }
 ]
 
 
 export function getPassagemPorId(id) {
-  const passagem =  listaMenu.find(l => l.id == id)
+  const passagem = listaMenu.find(l => l.id == id)
   return passagem
 }
