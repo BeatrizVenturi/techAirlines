@@ -1,29 +1,26 @@
 <script setup></script>
 <template>
   <nav class="nav">
-    
+
     <ul>
-      <li><RouterLink to="/">Menu</RouterLink></li>
-      <li><RouterLink to="/about">Hotéis</RouterLink></li>
+      <li>
+        <RouterLink to="/">Menu</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/about">Hotéis</RouterLink>
+      </li>
     </ul>
   </nav>
-
- 
 </template>
 <style scoped>
-
-
 nav {
-  margin-left: 187px;
+  margin-left: 185px;
   background: #3253a8;
   margin-top: -10px;
+}
 
-}
-img{
+img {
   width: 100px;
-}
-li{
-  
 }
 
 nav::after {
@@ -41,6 +38,8 @@ nav ul {
 nav ul li {
   float: left;
   position: relative;
+  font-family: Bellefair;
+  font-size: x-large;
 }
 
 nav ul li a {
