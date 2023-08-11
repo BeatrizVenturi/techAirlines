@@ -8,6 +8,7 @@ import CardPassagemMaisVendida from '@/components/menu/CardPassagemMaisVendida.v
 
     <div class="cards">
       <CardPassagemMaisVendida></CardPassagemMaisVendida>
+      
     </div>
   </div>
 </template>
