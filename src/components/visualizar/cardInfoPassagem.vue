@@ -8,7 +8,11 @@ const props = defineProps({
 
 const passagem = ref({
     "ida": {
-        "data": null
+        "data": null,
+        "horario": null,
+        "aeroporto": null,
+        "tempo": null,
+        "tipo": null
     },
     "volta": {
         "data": null
@@ -32,37 +36,80 @@ onMounted(() => {
         </div>
         <div class="info-passagem">
             <div class="ida">
-                <p>Ida</p><br>
-                {{ passagem.ida.data }}
+                <div class="data-ida">
+                    <p>Ida</p>
+                    <p>{{ passagem.ida.data }}</p>
+
+                </div>
+                <div class="hora-ida">
+                    <p> {{ passagem.ida.horario }} </p>
+                    <p>{{ passagem.ida.aeroporto }}</p>
+                </div>
+                <div class="tempo-voo">
+                    <p>Tempo: {{ passagem.ida.tempo }}</p>
+                    <p> {{ passagem.ida.tipo }}</p>
+                </div>
             </div>
-            <div class="hora-aeroporto">
-            </div>
+
         </div>
     </div>
 </template>
 <style scoped>
-img {
-    width: 283px;
-    height: 358px;
-    flex-shrink: 0;
-    border-radius: 12px 0px 0px 12px;
-}
-.voo .titulo{
-    color: #FFF;
-text-align: center;
-font-family: Bellefair;
-font-size: 12px;
-font-style: normal;
-border-radius: 0px 12px 0px 0px;
-background: rgba(50, 83, 168, 0.63);
-font-weight: 400;
-line-height: normal;
-font-weight: 400;
-line-height: normal;}
-.voo{
-    width: 341px;
-height: 27px;
-flex-shrink: 0;
+.info-passagem {
+    background-color: #3253A8A1;
+
 }
 
+p {
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    /* font-size: 12px; */
+    /* font-style: normal; */
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Bellefair;
+}
+
+img {
+    width: 783px;
+    height: 890px;
+    flex-shrink: 0;
+    border-radius: 12px 0px 0px 12px;
+    margin-left: 55px;
+    margin-top: 54px;
+}
+
+.voo .titulo {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 0px 12px 0px 0px;
+    background: rgba(50, 83, 168, 0.63);
+    font-weight: 400;
+    line-height: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 54px;
+}
+
+.ida {
+    width: 341px;
+    height: 27px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Bellefair;
+    padding-right: 200px;
+
+
+
+}
 </style>
