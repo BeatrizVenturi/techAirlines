@@ -15,7 +15,11 @@ const passagem = ref({
         "tipo": null
     },
     "volta": {
-        "data": null
+        "data": null,
+        "horario": null,
+        "aeroporto": null,
+        "tempo": null,
+        "tipo": null
     }
 })
 
@@ -35,29 +39,55 @@ onMounted(() => {
             <h1>Voo</h1>
         </div>
         <div class="info-passagem">
-            <div class="ida">
+            <div class="ida-volta">
                 <div class="data-ida">
                     <p>Ida</p>
                     <p>{{ passagem.ida.data }}</p>
-
                 </div>
-                <div class="hora-ida">
+                <div class="hora">
                     <p> {{ passagem.ida.horario }} </p>
                     <p>{{ passagem.ida.aeroporto }}</p>
                 </div>
                 <div class="tempo-voo">
-                    <p>Tempo: {{ passagem.ida.tempo }}</p>
+                    <p>Tempo:{{ passagem.ida.tempo }}</p>
                     <p> {{ passagem.ida.tipo }}</p>
                 </div>
             </div>
-
+            <hr>
+            <div class="ida-volta">
+                <div class="data">
+                    <p>Volta</p>
+                    <p>{{ passagem.volta.data }}</p>
+                </div>
+                <div class="hora">
+                    <p> {{ passagem.volta.horario }} </p>
+                    <p>{{ passagem.volta.aeroporto }}</p>
+                </div>
+                <div class="tempo-voo">
+                    <p>Tempo:{{ passagem.volta.tempo }}</p>
+                    <p> {{ passagem.volta.tipo }}</p>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div class="hotel">
+        
     </div>
 </template>
 <style scoped>
-.info-passagem {
-    background-color: #3253A8A1;
+hr {
+    height: 25px;
+    width: 683px;
+    margin-top: -45px;
+    margin-bottom: 50px;
+    background: #3253A8;
+    border: none;
+}
 
+.info-passagem {
+
+    background: rgba(50, 83, 168, 0.63);
 }
 
 p {
@@ -69,6 +99,9 @@ p {
     /* font-style: normal; */
     font-weight: 400;
     line-height: normal;
+    
+
+    padding-left: 125px;
 
 }
 
@@ -93,23 +126,25 @@ img {
     font-size: 12px;
     font-style: normal;
     border-radius: 0px 12px 0px 0px;
-    background: rgba(50, 83, 168, 0.63);
-    font-weight: 400;
-    line-height: normal;
-    font-weight: 400;
-    line-height: normal;
+    background: #3253A8;
     margin-top: 54px;
 }
 
-.ida {
-    width: 341px;
-    height: 27px;
+.ida-volta {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: Bellefair;
-    padding-right: 200px;
+    padding-right: 80px;
+    width: 583px;
+    height: 140px;
+    margin-top: -40px;
+    border-radius: 0px 12px 0px 0px;
 
 
+}
+
+.voo {
 
 }
 </style>
