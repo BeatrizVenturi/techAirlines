@@ -19,6 +19,11 @@ export const listaMenu = [
       aeroporto: 'ORY',
       tempo: '11h35min',
       tipo: 'Voo direto'
+    },
+    hotel: {
+      name: "Hôtel Lutetia",
+      description: "O Lutetia foi construído em 1910 em estilo Art Nouveau com projetos dos arquitetos Louis-Charles Boileau e Henri Tauzin. Foi fundado pela loja de departamentos Bon Marché , que fica em frente a ela, de frente para a Square Boucicaut. O Lutetia está localizado no cruzamento do Boulevard Raspail com a rue de Sèvres, ao lado da estação de metrô Sèvres-Babylone . O hotel recebeu o nome de uma antiga cidade pré-romana que existia onde Paris está agora localizada.",
+      img: 'https://upload.wikimedia.org/wikipedia/commons/d/da/H%C3%B4tel_Lutetia%2C_Paris_6e.jpg'
     }
   },
   {

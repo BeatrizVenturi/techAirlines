@@ -22,11 +22,14 @@ const passagem = ref({
         "tipo": null
     }
 })
+const hotel = ref({
+
+})
 
 onMounted(() => {
     console.log(props.id)
     passagem.value = getPassagemPorId(props.id)
-    console.log(passagem.value.ida.data)
+   
 })
 </script>
 <template>
@@ -72,7 +75,7 @@ onMounted(() => {
     </div>
 
     <div class="hotel">
-        
+        <!-- fazer card hotel  -->
     </div>
 </template>
 <style scoped>
