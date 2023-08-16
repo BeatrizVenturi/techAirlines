@@ -20,16 +20,20 @@ const passagem = ref({
         "aeroporto": null,
         "tempo": null,
         "tipo": null
-    }
+    },
+  "hotel":{
+    "name":null,
+    "img":null,
+    "diaEntrada":null,
+    "diaSaida":null
+  }
 })
-const hotel = ref({
 
-})
 
 onMounted(() => {
     console.log(props.id)
     passagem.value = getPassagemPorId(props.id)
-   
+
 })
 </script>
 <template>
@@ -75,10 +79,46 @@ onMounted(() => {
     </div>
 
     <div class="hotel">
-        <!-- fazer card hotel  -->
+        <div class="titulo">
+            <h1>Hotel</h1>
+        </div>
+
+        <div class="info-hotel">
+            <div class="img-hotel">
+                <img :src="passagem.hotel.img" alt="" class="imagemHotel" >
+            </div>
+            <div class="nome">
+                <p>{{ passagem.hotel.name }}</p>
+            </div>
+           <div class="data">
+            
+            <div class="dia-entrada">
+                <p>{{ passagem.hotel.diaEntrada }}</p>
+            </div>
+            <div class="data-saida">
+                <p>
+                    {{ passagem.hotel.diaSaida}}
+                </p>
+            </div>
+           </div>
+        </div>
     </div>
 </template>
 <style scoped>
+.info-hotel {
+    background: rgba(50, 83, 168, 0.63);
+}
+.imagemHotel{
+    width: 103px;
+    height: 100px;
+}
+.img-hotel{ 
+    
+}
+.foto-passagem {
+    width: 783px;
+    height: 890px;
+}
 hr {
     height: 25px;
     width: 683px;
@@ -102,7 +142,7 @@ p {
     /* font-style: normal; */
     font-weight: 400;
     line-height: normal;
-    
+
 
     padding-left: 125px;
 
@@ -113,14 +153,14 @@ h1 {
     font-family: Bellefair;
 }
 
-img {
-    width: 783px;
-    height: 890px;
+.foto-passagem {
+   
     flex-shrink: 0;
     border-radius: 12px 0px 0px 12px;
     margin-left: 55px;
     margin-top: 54px;
 }
+
 
 .voo .titulo {
     color: #FFF;
@@ -147,7 +187,5 @@ img {
 
 }
 
-.voo {
-
-}
+.voo {}
 </style>
