@@ -70,7 +70,15 @@ export const listaMenu = [
       aeroporto: 'ORY',
       tempo: '10h35min',
       tipo: 'Voo direto'
-    }
+    },
+    hotel: {
+      name: "Hotel Catalunya Oasis ",
+      description: "Bem-vindo ao nosso hotel elegante no coração de Londres, onde o charme britânico encontra o conforto moderno. Quartos luxuosos, restaurante com culinária britânica e internacional, spa relaxante e localização central próxima a atrações icônicas definem a experiência que oferecemos. Seja para negócios ou lazer, estamos prontos para recebê-lo com estilo e comodidade na vibrante cidade de Londres. ",
+      img:  "https://upload.wikimedia.org/wikipedia/commons/d/df/Langham_london.jpg",
+      diaEntrada:"entrada na terça-feira",
+      diaSaida:"saida no domingo"
+      }
+      
   },
   {
     id: 4,
@@ -92,7 +100,15 @@ export const listaMenu = [
       aeroporto: 'ORY',
       tempo: '1h35min',
       tipo: 'Voo direto'
-    }
+    },
+    hotel: {
+      name: "Meliá Cohiba ",
+      description: " Bem-vindo ao Havana Oasis, um hotel em Havana, Cuba, que combina charme colonial com influências contemporâneas. Quartos elegantes com toques cubanos, restaurante destacando a culinária local, spa relaxante e localização central próxima a atrações icônicas. Sinta a autêntica essência cubana enquanto desfruta de conforto e hospitalidade excepcionais.",
+      img:  "https://media-cdn.tripadvisor.com/media/photo-s/14/03/cb/1d/entrada-hotel.jpg",
+      diaEntrada:"entrada na segunda-feira",
+      diaSaida:"saida no sabado"
+      }
+      
   },
   {
     id: 5,
@@ -114,7 +130,15 @@ export const listaMenu = [
       aeroporto: 'ORY',
       tempo: '8h35min',
       tipo: 'Voo direto'
-    }
+    },
+    hotel: {
+      name: "Paraíso Jericoacoara Resort",
+      description: " Bem-vindo ao Paraíso Jericoacoara Resort, um refúgio de luxo à beira-mar na bela praia de Jericoacoara, Brasil. Com vistas deslumbrantes do oceano, acomodações elegantes e espaçosas, restaurante com culinária regional e internacional, spa relaxante e localização conveniente próximo a atrações naturais icônicas. Experimente o melhor do conforto e da beleza natural neste retiro paradisíaco à beira-mar.",
+      img:  "https://media-cdn.tripadvisor.com/media/photo-s/14/03/cb/1d/entrada-hotel.jpg",
+      diaEntrada:"entrada na segunda-feira",
+      diaSaida:"saida no sabado"
+      }
+      
 
   },
   {
@@ -137,8 +161,16 @@ export const listaMenu = [
       aeroporto: 'ORY',
       tempo: '1h40min',
       tipo: 'Voo direto'
-    }
-  },
+    },
+    hotel: {
+      name: "Serenity Bonito Eco Resort,",
+      description: "Bem-vindo ao Serenity Bonito Eco Resort, um retiro natural em Bonito. Com acomodações confortáveis em meio à natureza, restaurante com pratos regionais, spa relaxante e localização estratégica para explorar as atrações de Bonito. Desfrute de uma experiência serena e conectada com a natureza."		,
+      img:"https://media-cdn.tripadvisor.com/media/photo-s/10/8e/53/99/bonito-ecotel.jpg",
+      diaEntrada:"entrada na segunda-feira",
+      diaSaida:"saida no sabado"
+      
+  }
+},
   {
     id: 7,
     title: 'FLORIANÓPOLIS',
@@ -159,7 +191,15 @@ export const listaMenu = [
       aeroporto: 'ORY',
       tempo: '3h40min',
       tipo: 'Voo direto'
-    }
+    },
+    hotel: {
+      name: "Hotel Boutique Quinta das Videiras",
+      description: " Bem-vindo ao Hotel Boutique Quinta das Videiras, um refúgio à beira-mar em Florianópolis. Oferecemos acomodações luxuosas com vista para o mar, restaurante com gastronomia local e internacional, spa relaxante e piscina de borda infinita. Experimente o charme da ilha com conforto e estilo, enquanto aproveita as atrações naturais e culturais da região.",
+      img:  "https://1.bp.blogspot.com/-GaSrWAmJvU8/YAntXCv-JWI/AAAAAAABRCE/pgCE0DDwaFg_83T1uWqK6qqogBN8yBHQACLcBGAsYHQ/s16000/20190402_094452.jpg",
+      diaEntrada:"entrada na segunda-feira",
+      diaSaida:"saida no sabado"
+      }
+      
   },
   {
     id: 8,
@@ -181,7 +221,15 @@ export const listaMenu = [
       aeroporto: 'ORY',
       tempo: '1h50min',
       tipo: 'Voo direto'
-    }
+    },
+    hotel: {
+      name: " Cataratas View Hotel",
+      description: "Bem-vindo ao Cataratas View Hotel em Foz do Iguaçu! Localizado estrategicamente próximo às Cataratas do Iguaçu, nosso hotel oferece vistas deslumbrantes, quartos confortáveis, gastronomia local e acesso conveniente às principais atrações. Experimente a magia das Cataratas e a hospitalidade única de Foz do Iguaçu em um ambiente acolhedor e moderno. ",
+      img:  "https://viajocomfilhos.com.br/wp-content/uploads/2015/10/recantodascataratasfozdoiguacucomcriancas1.jpg",
+      diaEntrada:"entrada na segunda-feira",
+      diaSaida:"saida no sabado"
+      }
+      
   }
 ]
 
