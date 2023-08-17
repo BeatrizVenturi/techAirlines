@@ -76,9 +76,8 @@ onMounted(() => {
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="hotel">
+        <div class="hotel">
         <div class="titulo">
             <h1>Hotel</h1>
         </div>
@@ -103,25 +102,50 @@ onMounted(() => {
            </div>
         </div>
     </div>
+
+    </div>
+
+  
 </template>
 <style scoped>
-.info-hotel {
-    background: rgba(50, 83, 168, 0.63);
+.nome{
+    margin-left: -70px;
 }
+.img-hotel{
+   margin-left: 90px;
+margin-top: 20px;
+
+}
+   
+.info-hotel{
+    float: left;
+    width: 689px;
+    height: 170px;
+    margin-top: -40px;
+    border-radius: 0px 0px 12px 0px;
+    font-family: Bellefair;
+    padding-right: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    background: rgba(50, 83, 168, 0.63);
+
+
+}
+
 .imagemHotel{
     width: 103px;
     height: 100px;
-}
-.img-hotel{ 
-    
+    border-radius: 15px ;
+   
 }
 .foto-passagem {
     width: 783px;
     height: 890px;
 }
 hr {
+    width: 767px;
     height: 25px;
-    width: 683px;
+   
     margin-top: -45px;
     margin-bottom: 50px;
     background: #3253A8;
@@ -138,12 +162,8 @@ p {
     color: #FFF;
     text-align: center;
     font-family: Bellefair;
-    /* font-size: 12px; */
-    /* font-style: normal; */
     font-weight: 400;
     line-height: normal;
-
-
     padding-left: 125px;
 
 }
@@ -160,8 +180,6 @@ h1 {
     margin-left: 55px;
     margin-top: 54px;
 }
-
-
 .voo .titulo {
     color: #FFF;
     text-align: center;
@@ -172,9 +190,7 @@ h1 {
     background: #3253A8;
     margin-top: 54px;
 }
-
 .ida-volta {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: Bellefair;
@@ -182,10 +198,5 @@ h1 {
     width: 583px;
     height: 140px;
     margin-top: -40px;
-    border-radius: 0px 12px 0px 0px;
-
-
 }
-
-.voo {}
 </style>
