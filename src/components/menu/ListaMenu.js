@@ -4,7 +4,8 @@ export const listaMenu = [
     title: 'PARIS',
     origin: 'São Paulo',
     destiny: 'Paris',
-    price: 1000.0,
+    price: 1000.00,
+    taxa: 400.00,
     img: 'https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80',
     ida: {
       data: '10/08/23',
@@ -34,6 +35,7 @@ export const listaMenu = [
     origin: 'Curitiba',
     destiny: 'Barcelona',
     price: 1000.0,
+    taxa: 400.00,
     img: 'https://cdn.shopify.com/s/files/1/0410/9293/9926/files/La_sagrada_familia_gaudi_480x480.jpg?v=1649591835',
     ida: {
       data: '30/08/23',
@@ -56,6 +58,7 @@ export const listaMenu = [
     origin: 'São Paulo',
     destiny: 'Londres',
     price: 1000.0,
+    taxa: 400.00,
     img: 'https://lavidaesmara.com/wp-content/uploads/2021/02/roteiro-dia-londres.jpg',
     ida: {
       data: '10/08/23',
@@ -86,6 +89,7 @@ export const listaMenu = [
     origin: 'São Paulo',
     destiny: 'Havana',
     price: 1000.0,
+    taxa: 400.00,
     img: 'https://sun-surfer.com/photos/2016/03/Havana-Cuba.jpg',
     ida: {
       data: '16/02/24',
@@ -116,6 +120,7 @@ export const listaMenu = [
     origin: 'São Paulo',
     destiny: 'Jericoacoara',
     price: 1000.0,
+    taxa: 400.00,
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFAClmcPdKO094wNa8VafcaDY1Qlono_F5j3KsnNx4GcZrfAmaefOEL0d0iWfDJo80UME&usqp=CAU',
     ida: {
       data: '16/09/24',
@@ -147,6 +152,7 @@ export const listaMenu = [
     origin: '',
     destiny: '',
     price: 1000.0,
+    taxa: 400.00,
     img: 'https://www.umviajante.com.br/wp-content/uploads/2021/12/bonito-ms-top-passeios.jpg',
     ida: {
       data: '18/07/24',
@@ -177,6 +183,7 @@ export const listaMenu = [
     origin: '',
     destiny: '',
     price: 1000.0,
+    taxa: 400.00,
     img: 'https://i0.wp.com/turismodeprimeira.com.br/wp-content/uploads/2022/02/cropped-bridge-6851672_1920.jpg?resize=360%2C600&ssl=1',
     ida: {
       data: '25/12/22',
@@ -207,6 +214,7 @@ export const listaMenu = [
     origin: '',
     destiny: '',
     price: 1000.0,
+    taxa: 400.00,
     img: 'https://w0.peakpx.com/wallpaper/427/588HD-wallpaper-cataratas-agua-cachoeira-fall-falls-foz-iguacu-nature-water-waterfall-thumbnail.jpg',
     ida: {
       data: '20/11/23',

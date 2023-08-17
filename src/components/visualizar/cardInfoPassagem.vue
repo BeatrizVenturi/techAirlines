@@ -102,12 +102,41 @@ onMounted(() => {
            </div>
         </div>
     </div>
-
+    <div class="info-valores">
+<div class="titulo ">
+    <h1>Valores</h1>
+</div>
+<div class="valores">
+    <div class="valores-viajante">
+        <p>Valor por viajante:{{ passagem.price }}</p>
+    </div>
+    <div class="valor-taxas">
+        <p>Taxas e Impostos:{{ passagem.taxa }}</p>
+    </div>
+</div>
+</div>
     </div>
 
   
 </template>
 <style scoped>
+.valores-viajante{
+    
+    width: 689px;
+    height: 170px;
+    margin-top: -40px;
+    border-radius: 0px 0px 12px 0px;
+    font-family: Bellefair;
+    padding-right: 80px;
+ 
+    background: rgba(50, 83, 168, 0.63);
+}
+.hotel{
+    margin-top: -24px;
+}
+.info-valores{
+    margin-top: 200px;
+}
 .nome{
     margin-left: -70px;
 }
@@ -145,15 +174,14 @@ margin-top: 20px;
 hr {
     width: 767px;
     height: 25px;
-   
-    margin-top: -45px;
+    margin-top: -4px;
     margin-bottom: 50px;
     background: #3253A8;
     border: none;
 }
 
 .info-passagem {
-
+border-radius: 0px 0px 12px 0px;
     background: rgba(50, 83, 168, 0.63);
 }
 
@@ -180,7 +208,7 @@ h1 {
     margin-left: 55px;
     margin-top: 54px;
 }
-.voo .titulo {
+.titulo {
     color: #FFF;
     text-align: center;
     font-family: Bellefair;
@@ -189,6 +217,7 @@ h1 {
     border-radius: 0px 12px 0px 0px;
     background: #3253A8;
     margin-top: 54px;
+    ;
 }
 .ida-volta {
     display: grid;
@@ -196,7 +225,7 @@ h1 {
     font-family: Bellefair;
     padding-right: 80px;
     width: 583px;
-    height: 140px;
+    height: 100px;
     margin-top: -40px;
 }
 </style>
