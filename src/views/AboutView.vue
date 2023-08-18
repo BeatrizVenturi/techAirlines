@@ -2,7 +2,12 @@
 import Hotel from '../components/hotel/Hotel.vue';
 </script>
 <template>
-<hotel></hotel>
+<div class="cards"><hotel></hotel></div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.cards {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+
+}</style>

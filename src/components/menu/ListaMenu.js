@@ -244,20 +244,78 @@
 export const hoteis = [
   {
     id: 1,
+    title: 'PARIS',
     name: "Hôtel Lutetia",
-    description: "O Lutetia foi construído em 1910 em estilo Art Nouveau com projetos dos arquitetos Louis-Charles Boileau e Henri Tauzin. Foi fundado pela loja de departamentos Bon Marché , que fica em frente a ela, de frente para a Square Boucicaut. O Lutetia está localizado no cruzamento do Boulevard Raspail com a rue de Sèvres, ao lado da estação de metrô Sèvres-Babylone . O hotel recebeu o nome de uma antiga cidade pré-romana que existia onde Paris está agora localizada. ",
+    description: "O Lutetia foi construído em 1910 em estilo Art Nouveau com projetos dos arquitetos Louis-Charles Boileau e Henri Tauzin. Foi fundado pela loja de departamentos Bon Marché , que fica em frente a ela, de frente para a Square Boucicaut. O Lutetia está localizado no cruzamento do Boulevard Raspail com a rue de Sèvres, ao lado da estação de metrô Sèvres-Babylone . O hotel recebeu o nome de uma antiga cidade pré-romana que existia onde Paris está agora localizada.O Hotel Lutetia oferece aos seus hóspedes uma variedade de comodidades e serviços que refletem seu status como um estabelecimento de luxo em Paris. Entre as ofertas notáveis estão.Acomodações Elegantes: O Lutetia dispõe de quartos e suítes bem decorados e confortáveis, oferecendo uma estadia luxuosa e relaxante para os hóspedes.Restaurantes e Bares: O hotel abriga diversos restaurantes e bares que proporcionam experiências gastronômicas excepcionais. Esses locais frequentemente oferecem pratos gourmet preparados por chefs talentosos, bem como uma ampla seleção de vinhos e coquetéis.Spa e Bem-Estar: Muitos hotéis de luxo, incluindo o Lutetia, têm spas de classe mundial, onde os hóspedes podem desfrutar de uma variedade de tratamentos de relaxamento, terapias de beleza e instalações de bem-estar para cuidar do corpo e da mente.Eventos e Salas de Reunião: O Lutetia possui instalações para eventos e conferências, tornando-o um local popular para reuniões de negócios, conferências e celebrações especiais.Serviço de Concierge Personalizado: Os hóspedes podem contar com um serviço de concierge dedicado que pode ajudar a organizar atividades na cidade, reservas em restaurantes, ingressos para espetáculos e outras experiências exclusivas.Localização Central: Sua localização estratégica no coração de Paris permite aos hóspedes fácil acesso a várias atrações da cidade, lojas de luxo e opções de transporte.Decoração e Design Únicos: Além da arquitetura Art Nouveau, o Lutetia muitas vezes exibe um interior decorado com elementos luxuosos, obras de arte e móveis que combinam com sua atmosfera sofisticada.Serviço de Quarto 24 Horas: Os hóspedes podem desfrutar de serviços de quarto disponíveis a qualquer hora do dia, permitindo-lhes solicitar refeições, bebidas e outros serviços no conforto de seus quartos.Acervo Cultural e Histórico: Devido à sua longa história e reputação, o Lutetia muitas vezes celebra sua rica herança cultural e histórica, exibindo peças de arte e elementos arquitetônicos que refletem o passado do hotel e de Paris.No geral, o Hotel Lutetia oferece uma experiência de hospedagem excepcional para aqueles que buscam luxo, conforto e uma conexão com a rica história e cultura de Paris.",
     img: 'https://upload.wikimedia.org/wikipedia/commons/d/da/H%C3%B4tel_Lutetia%2C_Paris_6e.jpg',
     diaEntrada:"entrada na sexta-feira ",
     diaSaida:"saida na quarta-feira",
   },
   {
     id: 2,
+    title: 'BARCELONA',
     name: " Cataratas View Hotel",
     description: "Bem-vindo ao Cataratas View Hotel em Foz do Iguaçu! Localizado estrategicamente próximo às Cataratas do Iguaçu, nosso hotel oferece vistas deslumbrantes, quartos confortáveis, gastronomia local e acesso conveniente às principais atrações. Experimente a magia das Cataratas e a hospitalidade única de Foz do Iguaçu em um ambiente acolhedor e moderno. ",
     img:  "https://viajocomfilhos.com.br/wp-content/uploads/2015/10/recantodascataratasfozdoiguacucomcriancas1.jpg",
     diaEntrada:"entrada na segunda-feira",
     diaSaida:"saida no sabado"
-    }
+    },
+    {
+      id: 3,
+      title: 'LONDRES',
+      name: "Hotel Catalunya Oasis ",
+      description: "Bem-vindo ao nosso hotel elegante no coração de Londres, onde o charme britânico encontra o conforto moderno. Quartos luxuosos, restaurante com culinária britânica e internacional, spa relaxante e localização central próxima a atrações icônicas definem a experiência que oferecemos. Seja para negócios ou lazer, estamos prontos para recebê-lo com estilo e comodidade na vibrante cidade de Londres. ",
+      img:  "https://upload.wikimedia.org/wikipedia/commons/d/df/Langham_london.jpg",
+      diaEntrada:"entrada na terça-feira",
+      diaSaida:"saida no domingo"
+      },
+      {
+        id: 4,
+        title: 'HAVANA-CUBA',
+        name: "Meliá Cohiba ",
+        description: " Bem-vindo ao Havana Oasis, um hotel em Havana, Cuba, que combina charme colonial com influências contemporâneas. Quartos elegantes com toques cubanos, restaurante destacando a culinária local, spa relaxante e localização central próxima a atrações icônicas. Sinta a autêntica essência cubana enquanto desfruta de conforto e hospitalidade excepcionais.",
+        img:  "https://media-cdn.tripadvisor.com/media/photo-s/14/03/cb/1d/entrada-hotel.jpg",
+        diaEntrada:"entrada na segunda-feira",
+        diaSaida:"saida no sabado"
+        },
+        {
+          id: 5,
+          title: 'JERICOACOARA',
+          name: "Paraíso Jericoacoara Resort",
+          description: " Bem-vindo ao Paraíso Jericoacoara Resort, um refúgio de luxo à beira-mar na bela praia de Jericoacoara, Brasil. Com vistas deslumbrantes do oceano, acomodações elegantes e espaçosas, restaurante com culinária regional e internacional, spa relaxante e localização conveniente próximo a atrações naturais icônicas. Experimente o melhor do conforto e da beleza natural neste retiro paradisíaco à beira-mar.",
+          img:  "https://media-cdn.tripadvisor.com/media/photo-s/14/03/cb/1d/entrada-hotel.jpg",
+          diaEntrada:"entrada na segunda-feira",
+          diaSaida:"saida no sabado"
+          },
+          {
+            id: 6,
+          title: 'BONITO',
+            name: "Serenity Bonito Eco Resort,",
+            description: "Bem-vindo ao Serenity Bonito Eco Resort, um retiro natural em Bonito. Com acomodações confortáveis em meio à natureza, restaurante com pratos regionais, spa relaxante e localização estratégica para explorar as atrações de Bonito. Desfrute de uma experiência serena e conectada com a natureza."		,
+            img:"https://media-cdn.tripadvisor.com/media/photo-s/10/8e/53/99/bonito-ecotel.jpg",
+            diaEntrada:"entrada na segunda-feira",
+            diaSaida:"saida no sabado"
+            
+        },
+        {
+          
+          id: 7,
+          title: 'FLORIANÓPOLIS',
+          name: "Hotel Boutique Quinta das Videiras",
+          description: " Bem-vindo ao Hotel Boutique Quinta das Videiras, um refúgio à beira-mar em Florianópolis. Oferecemos acomodações luxuosas com vista para o mar, restaurante com gastronomia local e internacional, spa relaxante e piscina de borda infinita. Experimente o charme da ilha com conforto e estilo, enquanto aproveita as atrações naturais e culturais da região.",
+          img:  "https://1.bp.blogspot.com/-GaSrWAmJvU8/YAntXCv-JWI/AAAAAAABRCE/pgCE0DDwaFg_83T1uWqK6qqogBN8yBHQACLcBGAsYHQ/s16000/20190402_094452.jpg",
+          diaEntrada:"entrada na segunda-feira",
+          diaSaida:"saida no sabado"
+          },
+          {
+            id: 8,
+    title: 'FOZ DO IGUAÇU',
+            name: " Cataratas View Hotel",
+            description: "Bem-vindo ao Cataratas View Hotel em Foz do Iguaçu! Localizado estrategicamente próximo às Cataratas do Iguaçu, nosso hotel oferece vistas deslumbrantes, quartos confortáveis, gastronomia local e acesso conveniente às principais atrações. Experimente a magia das Cataratas e a hospitalidade única de Foz do Iguaçu em um ambiente acolhedor e moderno. ",
+            img:  "https://viajocomfilhos.com.br/wp-content/uploads/2015/10/recantodascataratasfozdoiguacucomcriancas1.jpg",
+            diaEntrada:"entrada na segunda-feira",
+            diaSaida:"saida no sabado"
+            }
 ]
 
 
