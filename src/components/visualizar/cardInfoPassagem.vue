@@ -1,6 +1,7 @@
 <script setup>
 import { defineProps, onMounted, ref } from 'vue';
 import { getPassagemPorId } from '@/components/menu/ListaMenu';
+import { comprar } from '@/components/comprar/Comprar';
 
 
 
@@ -123,10 +124,7 @@ onMounted(() => {
 
                     <p>Taxas e Impostos: {{ passagem.taxa }}</p>
 
-                    <div class="button-voltar">
-                        <a href="#">COMPRAR</a>
-                    </div>
-
+                   <comprar></comprar>
                 </div>
 
             </div>
@@ -199,14 +197,17 @@ a:hover+.icon {
     color: black;
     text-shadow: 0px 0px 5px black;
 }
-.valores-viajante p{
+
+.valores-viajante p {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.valores-viajante{
+
+.valores-viajante {
     padding-top: 10px;
 }
+
 .valores {
     margin: center;
     height: 170px;
