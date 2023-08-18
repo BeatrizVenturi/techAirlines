@@ -10,26 +10,26 @@ import navBar from '@/components/navBar.vue'
   <main>
     <div class="box">
       <div class="imagem-tech">
-        <img src="TECHT.png" alt="" width="130px" height="125px">
+        <img src="@/assets/img/TECHT.png" alt="" width="130px" height="125px">
       </div>
       <div class="imagem-passagem">
-        <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
         <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
       <div class="imagem-passagem">
-        <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
         <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
       <div class="imagem-passagem">
-        <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
         <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
       <div class="imagem-passagem">
-        <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
         <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
       <div class="imagem-passagem">
-        <img src="MEGA OFERTA.png" alt="" width="150px" height="150px">
+        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
         <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
       </div>
 
