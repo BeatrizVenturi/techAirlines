@@ -1,6 +1,12 @@
 <script setup>
 import { defineProps, onMounted, ref } from 'vue';
-import { getPassagemPorId } from '@/components/menu/ListaMenu'
+import { getPassagemPorId } from '@/components/menu/ListaMenu';
+
+
+
+// function formatarPreco(price) {
+//     return 'R$ ' + price.toFixed(2).replace('.', ',')
+// }
 
 const props = defineProps({
     id: String
@@ -13,6 +19,7 @@ const passagem = ref({
         "aeroporto": null,
         "tempo": null,
         "tipo": null
+
     },
     "volta": {
         "data": null,
@@ -21,12 +28,13 @@ const passagem = ref({
         "tempo": null,
         "tipo": null
     },
-  "hotel":{
-    "name":null,
-    "img":null,
-    "diaEntrada":null,
-    "diaSaida":null
-  }
+    "hotel": {
+        "name": null,
+        "img": null,
+        "diaEntrada": null,
+        "diaSaida": null
+    },
+    "price": null
 })
 
 
@@ -35,10 +43,13 @@ onMounted(() => {
     passagem.value = getPassagemPorId(props.id)
 
 })
+
+
 </script>
 <template>
     <div class="wrap-passagens">
         <img :src="passagem.img" alt="foto" class="foto-passagem" />
+
     </div>
 
     <div class="voo">
@@ -78,79 +89,92 @@ onMounted(() => {
         </div>
 
         <div class="hotel">
-        <div class="titulo">
-            <h1>Hotel</h1>
-        </div>
+            <div class="titulo">
+                <h1>Hotel</h1>
+            </div>
 
-        <div class="info-hotel">
-            <div class="img-hotel">
-                <img :src="passagem.hotel.img" alt="" class="imagemHotel" >
+            <div class="info-hotel">
+                <div class="img-hotel">
+                    <img :src="passagem.hotel?.img" alt="" class="imagemHotel">
+                </div>
+                <div class="nome">
+                    <p>{{ passagem.hotel?.name }}</p>
+                </div>
+                <div class="data">
+
+                    <div class="dia-entrada">
+                        <p>{{ passagem.hotel?.diaEntrada }}</p>
+                    </div>
+                    <div class="data-saida">
+                        <p>
+                            {{ passagem.hotel?.diaSaida }}
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="nome">
-                <p>{{ passagem.hotel.name }}</p>
+        </div>
+        <div class="info-valores">
+            <div class="titulo ">
+                <h1>Valores</h1>
             </div>
-           <div class="data">
-            
-            <div class="dia-entrada">
-                <p>{{ passagem.hotel.diaEntrada }}</p>
+            <div class="valores">
+                <div class="valores-viajante">
+                    <p>Valor por viajante: {{ (passagem.price) }}</p>
+
+                    <p>Taxas e Impostos: R${{ passagem.taxa }}</p>
+                </div>
             </div>
-            <div class="data-saida">
-                <p>
-                    {{ passagem.hotel.diaSaida}}
-                </p>
-            </div>
-           </div>
         </div>
     </div>
-    <div class="info-valores">
-<div class="titulo ">
-    <h1>Valores</h1>
-</div>
-<div class="valores">
-    <div class="valores-viajante">
-        <p>Valor por viajante:{{ passagem.price }}</p>
-    </div>
-    <div class="valor-taxas">
-        <p>Taxas e Impostos:{{ passagem.taxa }}</p>
-    </div>
-</div>
-</div>
-    </div>
-
-  
 </template>
 <style scoped>
-.valores-viajante{
-    
+.wrap-passagens {
+    display: inline-block;
+    position: relative;
+}
+
+.wrap-passagens figcaption {
+    position: absolute;
+ 
+    color: black;
+    text-shadow: 0px 0px 5px black;
+}
+
+.valores-viajante {
+
     width: 689px;
     height: 170px;
-    margin-top: -40px;
+    margin-top: -41px;
     border-radius: 0px 0px 12px 0px;
     font-family: Bellefair;
     padding-right: 80px;
- 
+
     background: rgba(50, 83, 168, 0.63);
 }
-.hotel{
+
+.hotel {
     margin-top: -24px;
 }
-.info-valores{
-    margin-top: 200px;
+
+.info-valores {
+    margin-top: 252.5px;
 }
-.nome{
+
+.nome {
     margin-left: -70px;
 }
-.img-hotel{
-   margin-left: 90px;
-margin-top: 20px;
+
+.img-hotel {
+    margin-left: 90px;
+    margin-top: 20px;
 
 }
-   
-.info-hotel{
+
+.info-hotel {
     float: left;
     width: 689px;
     height: 170px;
-    margin-top: -40px;
+    margin-top: -41px;
     border-radius: 0px 0px 12px 0px;
     font-family: Bellefair;
     padding-right: 80px;
@@ -161,16 +185,18 @@ margin-top: 20px;
 
 }
 
-.imagemHotel{
+.imagemHotel {
     width: 103px;
     height: 100px;
-    border-radius: 15px ;
-   
+    border-radius: 15px;
+
 }
+
 .foto-passagem {
     width: 783px;
     height: 890px;
 }
+
 hr {
     width: 767px;
     height: 25px;
@@ -181,7 +207,7 @@ hr {
 }
 
 .info-passagem {
-border-radius: 0px 0px 12px 0px;
+    border-radius: 0px 0px 12px 0px;
     background: rgba(50, 83, 168, 0.63);
 }
 
@@ -202,12 +228,13 @@ h1 {
 }
 
 .foto-passagem {
-   
+
     flex-shrink: 0;
     border-radius: 12px 0px 0px 12px;
     margin-left: 55px;
     margin-top: 54px;
 }
+
 .titulo {
     color: #FFF;
     text-align: center;
@@ -219,6 +246,7 @@ h1 {
     margin-top: 54px;
     ;
 }
+
 .ida-volta {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -227,5 +255,4 @@ h1 {
     width: 583px;
     height: 100px;
     margin-top: -40px;
-}
-</style>
+}</style>
