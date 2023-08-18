@@ -1,7 +1,8 @@
+<script setup>
+import Hotel from '../components/hotel/Hotel.vue';
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<hotel></hotel>
 </template>
 
-<style></style>
+<style scoped></style>

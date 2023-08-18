@@ -1,4 +1,4 @@
-export const listaMenu = [
+  export const listaMenu = [
   {
     id: 1,
     title: 'PARIS',
@@ -239,6 +239,25 @@ export const listaMenu = [
       }
       
   }
+]
+
+export const hoteis = [
+  {
+    id: 1,
+    name: "Hôtel Lutetia",
+    description: "O Lutetia foi construído em 1910 em estilo Art Nouveau com projetos dos arquitetos Louis-Charles Boileau e Henri Tauzin. Foi fundado pela loja de departamentos Bon Marché , que fica em frente a ela, de frente para a Square Boucicaut. O Lutetia está localizado no cruzamento do Boulevard Raspail com a rue de Sèvres, ao lado da estação de metrô Sèvres-Babylone . O hotel recebeu o nome de uma antiga cidade pré-romana que existia onde Paris está agora localizada. ",
+    img: 'https://upload.wikimedia.org/wikipedia/commons/d/da/H%C3%B4tel_Lutetia%2C_Paris_6e.jpg',
+    diaEntrada:"entrada na sexta-feira ",
+    diaSaida:"saida na quarta-feira",
+  },
+  {
+    id: 2,
+    name: " Cataratas View Hotel",
+    description: "Bem-vindo ao Cataratas View Hotel em Foz do Iguaçu! Localizado estrategicamente próximo às Cataratas do Iguaçu, nosso hotel oferece vistas deslumbrantes, quartos confortáveis, gastronomia local e acesso conveniente às principais atrações. Experimente a magia das Cataratas e a hospitalidade única de Foz do Iguaçu em um ambiente acolhedor e moderno. ",
+    img:  "https://viajocomfilhos.com.br/wp-content/uploads/2015/10/recantodascataratasfozdoiguacucomcriancas1.jpg",
+    diaEntrada:"entrada na segunda-feira",
+    diaSaida:"saida no sabado"
+    }
 ]
 
 
