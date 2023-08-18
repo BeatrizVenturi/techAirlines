@@ -128,6 +128,16 @@ onMounted(() => {
     </div>
 </template>
 <style scoped>
+*{
+    font-family: Bellefair;
+}
+.dia-entrada{
+    margin-left: -40px;
+}
+.data-saida{
+    margin-left: -40px;
+
+}
 .wrap-passagens {
     display: inline-block;
     position: relative;
@@ -146,9 +156,7 @@ onMounted(() => {
     height: 170px;
     margin-top: -41px;
     border-radius: 0px 0px 12px 0px;
-    font-family: Bellefair;
     padding-right: 80px;
-
     background: rgba(50, 83, 168, 0.63);
 }
 
@@ -161,7 +169,8 @@ onMounted(() => {
 }
 
 .nome {
-    margin-left: -70px;
+    margin-top: 40px;
+    margin-left: -150px;
 }
 
 .img-hotel {
@@ -186,8 +195,8 @@ onMounted(() => {
 }
 
 .imagemHotel {
-    width: 103px;
-    height: 100px;
+    width: 165px;
+    height: 140px;
     border-radius: 15px;
 
 }
