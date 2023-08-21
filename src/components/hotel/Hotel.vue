@@ -1,32 +1,36 @@
 <script setup>
 import { hoteis } from '@/components/menu/ListaMenu.js'
+import MButton from '../MButton.vue';
 </script>
 
 <template>
   
 
-  <div class="card-hotel" v-for="hoteis in hoteis" :key="hoteis.id">
+  <div class="card-hotel" v-for="hotel in hoteis" :key="hoteis.id">
     <div class="informacao-hotel">
 <div class="atributo">
     <div class="imagem-hotel">
-        <img :src="hoteis.img" alt="foto" class="foto-hotel"/>
+        <img :src="hotel.img" alt="foto" class="foto-hotel"/>
       </div>
         <div class="local">
-        <h1>{{ hoteis.title }}</h1>
-        <p>{{ hoteis.name }}</p>
+        <h1>{{ hotel.title }}</h1>
+        <p>{{ hotel.name }}</p>
+        <MButton @click="$router.push({name: 'hotel', params: { id: hotel.id }})"></MButton>
       </div>
-     
+
 </div>
-  
      <div class="descricao">
-<p>{{ hoteis.description}}</p>
+<p>{{ hotel.description}}</p>
      </div>
     </div>
-  </div>
+  </div>  
 </template>
 <style scoped>
 .local{
     margin-left: 10px;
+}
+.descricao{
+  font-size: 17px;
 }
 .card-hotel{
     background-color: rgba(50, 83, 168, 0.63);
