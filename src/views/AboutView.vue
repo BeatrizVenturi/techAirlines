@@ -1,7 +1,13 @@
+<script setup>
+import Hotel from '../components/hotel/Hotel.vue';
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<div class="cards"><hotel></hotel></div>
 </template>
 
-<style></style>
+<style scoped>
+.cards {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+
+}</style>
