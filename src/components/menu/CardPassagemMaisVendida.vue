@@ -2,7 +2,6 @@
 import { listaMenu } from '@/components/menu/ListaMenu.js'
 import MButton from '@/components/MButton.vue';
 
-
 </script>
 <template>
 

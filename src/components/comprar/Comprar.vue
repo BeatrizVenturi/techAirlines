@@ -1,25 +1,12 @@
-<script setup></script>
+<script setup>
+
+</script>
 <template>
-    <div class="wrapper">
-        <div class="link_wrapper">
-            <a href="#">VISUALIZAR</a>
-        </div>
+    <div class="button-voltar">
+        <a href="#">COMPRAR</a>
     </div>
 </template>
 <style scoped>
-body {
-    font-family: 'Lato', sans-serif;
-
-}
-.wrapper{
-    padding-left: 9px;
-}
-.link_wrapper {
-    position: relative;
-
-}
-
-
 a {
     display: block;
     width: 230px;
@@ -36,8 +23,6 @@ a {
     border-radius: 50px;
     transition: all .35s;
 }
-
-
 a:hover {
     /* width: 200px; */
     border: 3x solid #5E84E7;

@@ -1,6 +1,9 @@
 <script setup>
 import { defineProps, onMounted, ref } from 'vue';
 import { getPassagemPorId } from '@/components/menu/ListaMenu';
+import comprar from '@/components/comprar/Comprar.vue';
+import voltar from '@/components/visualizar/Voltar.vue';
+
 
 
 
@@ -48,6 +51,11 @@ onMounted(() => {
 </script>
 <template>
     <div class="wrap-passagens">
+
+        <div class="voltar">
+            <voltar></voltar>
+        </div>
+
         <img :src="passagem.img" alt="foto" class="foto-passagem" />
 
     </div>
@@ -121,13 +129,76 @@ onMounted(() => {
                 <div class="valores-viajante">
                     <p>Valor por viajante: {{ (passagem.price) }}</p>
 
-                    <p>Taxas e Impostos: R${{ passagem.taxa }}</p>
+                    <p>Taxas e Impostos: {{ passagem.taxa }}</p>
+
+                    <comprar></comprar>
                 </div>
+
             </div>
         </div>
     </div>
 </template>
 <style scoped>
+.voltar{
+    margin-top: 10px;
+
+    margin-left: -600px;
+    margin-bottom: -40px;
+}
+.button-voltar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 120px;
+
+}
+
+a {
+    display: block;
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #5E84E7;
+    text-align: center;
+    font-size: large;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: all .35s;
+}
+
+a:hover {
+    /* width: 200px; */
+    border: 3x solid #5E84E7;
+    background: transparent;
+    color: #ffffff;
+}
+
+a:hover+.icon {
+    border: 3px solid #5E84E7;
+    right: -10%;
+}
+
+* {
+    font-family: Bellefair;
+}
+
+.dia-entrada {
+    margin-left: -40px;
+    margin-top: 40px;
+
+}
+
+.data-saida {
+    margin-left: -40px;
+    margin-top: 40px;
+
+
+}
+
 .wrap-passagens {
     display: inline-block;
     position: relative;
@@ -135,20 +206,27 @@ onMounted(() => {
 
 .wrap-passagens figcaption {
     position: absolute;
- 
+
     color: black;
     text-shadow: 0px 0px 5px black;
 }
 
-.valores-viajante {
+.valores-viajante p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    width: 689px;
+.valores-viajante {
+    padding-top: 10px;
+}
+
+.valores {
+    margin: center;
     height: 170px;
     margin-top: -41px;
     border-radius: 0px 0px 12px 0px;
-    font-family: Bellefair;
     padding-right: 80px;
-
     background: rgba(50, 83, 168, 0.63);
 }
 
@@ -161,7 +239,13 @@ onMounted(() => {
 }
 
 .nome {
-    margin-left: -70px;
+    margin-top: 10px;
+    margin-left: -120px;
+
+}
+
+.nome p {
+    font-size: xx-large;
 }
 
 .img-hotel {
@@ -181,13 +265,11 @@ onMounted(() => {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     background: rgba(50, 83, 168, 0.63);
-
-
 }
 
 .imagemHotel {
-    width: 103px;
-    height: 100px;
+    width: 165px;
+    height: 140px;
     border-radius: 15px;
 
 }
@@ -255,4 +337,5 @@ h1 {
     width: 583px;
     height: 100px;
     margin-top: -40px;
-}</style>
+}
+</style>
