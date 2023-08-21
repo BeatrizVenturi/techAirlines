@@ -143,7 +143,7 @@ onMounted(() => {
     margin-top: 10px;
 
     margin-left: -600px;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
 }
 .button-voltar {
     display: flex;
