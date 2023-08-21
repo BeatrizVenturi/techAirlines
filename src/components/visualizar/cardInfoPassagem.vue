@@ -1,7 +1,9 @@
 <script setup>
 import { defineProps, onMounted, ref } from 'vue';
 import { getPassagemPorId } from '@/components/menu/ListaMenu';
-import { comprar } from '@/components/comprar/Comprar';
+import comprar from '@/components/comprar/Comprar.vue';
+import voltar from '@/components/visualizar/Voltar.vue';
+
 
 
 
@@ -49,6 +51,11 @@ onMounted(() => {
 </script>
 <template>
     <div class="wrap-passagens">
+
+        <div class="voltar">
+            <voltar></voltar>
+        </div>
+
         <img :src="passagem.img" alt="foto" class="foto-passagem" />
 
     </div>
@@ -124,7 +131,7 @@ onMounted(() => {
 
                     <p>Taxas e Impostos: {{ passagem.taxa }}</p>
 
-                   <comprar></comprar>
+                    <comprar></comprar>
                 </div>
 
             </div>
@@ -132,6 +139,12 @@ onMounted(() => {
     </div>
 </template>
 <style scoped>
+.voltar{
+    margin-top: 10px;
+
+    margin-left: -600px;
+    margin-bottom: -50px;
+}
 .button-voltar {
     display: flex;
     align-items: center;
@@ -324,4 +337,5 @@ h1 {
     width: 583px;
     height: 100px;
     margin-top: -40px;
-}</style>
+}
+</style>
