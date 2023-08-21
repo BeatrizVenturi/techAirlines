@@ -4,7 +4,7 @@
     title: 'PARIS',
     origin: 'São Paulo',
     destiny: 'Paris',
-    price: 1000.00,
+    price: 1000.50,
     taxa: 400.00,
     img: 'https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80',
     ida: {
@@ -50,6 +50,13 @@
       aeroporto: 'ORY',
       tempo: '10h35min',
       tipo: 'Voo direto'
+    },
+    hotel: {
+      name: "Hôtel Lutetia",
+      description: "O Lutetia foi construído em 1910 em estilo Art Nouveau com projetos dos arquitetos Louis-Charles Boileau e Henri Tauzin. Foi fundado pela loja de departamentos Bon Marché , que fica em frente a ela, de frente para a Square Boucicaut. O Lutetia está localizado no cruzamento do Boulevard Raspail com a rue de Sèvres, ao lado da estação de metrô Sèvres-Babylone . O hotel recebeu o nome de uma antiga cidade pré-romana que existia onde Paris está agora localizada. ",
+      img: 'https://upload.wikimedia.org/wikipedia/commons/d/da/H%C3%B4tel_Lutetia%2C_Paris_6e.jpg',
+      diaEntrada:"entrada na sexta-feira ",
+      diaSaida:"saida na quarta-feira",
     }
   },
   {
@@ -233,7 +240,7 @@
     hotel: {
       name: " Cataratas View Hotel",
       description: "Bem-vindo ao Cataratas View Hotel em Foz do Iguaçu! Localizado estrategicamente próximo às Cataratas do Iguaçu, nosso hotel oferece vistas deslumbrantes, quartos confortáveis, gastronomia local e acesso conveniente às principais atrações. Experimente a magia das Cataratas e a hospitalidade única de Foz do Iguaçu em um ambiente acolhedor e moderno. ",
-      img:  "https://viajocomfilhos.com.br/wp-content/uploads/2015/10/recantodascataratasfozdoiguacucomcriancas1.jpg",
+      img:  'https://viajocomfilhos.com.br/wp-content/uploads/2015/10/recantodascataratasfozdoiguacucomcriancas1.jpg',
       diaEntrada:"entrada na segunda-feira",
       diaSaida:"saida no sabado"
       }
