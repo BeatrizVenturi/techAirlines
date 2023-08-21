@@ -2,7 +2,7 @@
 <template>
     <div class="wrapper">
         <div class="link_wrapper">
-            <a href="#">VISUALIZAR </a>
+            <a href="#">VISUALIZAR</a>
         </div>
 
     </div>
