@@ -4,7 +4,7 @@
 
     <ul>
       <li>
-        <RouterLink to="/">Menu</RouterLink>
+        <RouterLink to="/">Passagens</RouterLink>
       </li>
       <li>
         <RouterLink to="/about">Hotéis</RouterLink>

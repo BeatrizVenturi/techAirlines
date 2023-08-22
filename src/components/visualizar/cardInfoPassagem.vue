@@ -145,13 +145,7 @@ onMounted(() => {
     margin-left: -600px;
     margin-bottom: -40px;
 }
-.button-voltar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 120px;
 
-}
 
 a {
     display: block;

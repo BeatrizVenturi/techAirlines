@@ -257,6 +257,8 @@ export const hoteis = [
     img: 'https://upload.wikimedia.org/wikipedia/commons/d/da/H%C3%B4tel_Lutetia%2C_Paris_6e.jpg',
     diaEntrada:"entrada na sexta-feira ",
     diaSaida:"saida na quarta-feira",
+    PriceDiaria:500.00,
+    detalhes:'NÃO É PERMITIDO ANIMAIS. CAFÉ DA MANHÃ INCLUSO'
   },
   {
     id: 2,

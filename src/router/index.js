@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DetalhesPassagem from '@/views/DetalhesPassagem.vue'
 import hotel from '@/views/hotel.vue'
-
+import pacote from '@/views/pacote.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,7 +27,13 @@ const router = createRouter({
     {
       path: '/hotel/:id',
       name: 'hotel',
-      component: hotel ,
+      component: hotel,
+      props: true
+    },
+    {
+      path: '/pacote/:id',
+      name: 'pacote',
+      component: pacote,
       props: true
     }
 

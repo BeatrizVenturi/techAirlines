@@ -3,7 +3,8 @@
 </script>
 <template>
     <div class="button-voltar">
-        <a href="#">VOLTAR</a>
+        <RouterLink to="/">Voltar</RouterLink>
+
     </div>
 </template>
 <style scoped>
