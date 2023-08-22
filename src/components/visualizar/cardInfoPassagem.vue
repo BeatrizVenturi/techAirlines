@@ -141,8 +141,7 @@ onMounted(() => {
 <style scoped>
 .voltar{
     margin-top: 10px;
-
-    margin-left: -600px;
+    margin-left: 80px;
     margin-bottom: -40px;
 }
 

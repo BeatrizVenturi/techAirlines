@@ -31,8 +31,5 @@ a:hover {
     color: #ffffff;
 }
 
-a:hover+.icon {
-    border: 3px solid #3253A8;
-    right: -10%;
-}
+
 </style>

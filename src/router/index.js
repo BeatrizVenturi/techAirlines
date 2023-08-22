@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import DetalhesPassagem from '@/views/DetalhesPassagem.vue'
 import hotel from '@/views/hotel.vue'
 import pacote from '@/views/pacote.vue'
+import Descpacote from '@/views/Descpacote.vue'
+import inicio from '@/views/inicio.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +36,18 @@ const router = createRouter({
       path: '/pacote/:id',
       name: 'pacote',
       component: pacote,
+      props: true
+    },
+    {
+      path: '/Descpacote/:id',
+      name: 'Descpacote',
+      component: Descpacote,
+      props: true
+    },
+    {
+      path: '/inicio/:id',
+      name: 'inicio',
+      component: inicio,
       props: true
     }
 

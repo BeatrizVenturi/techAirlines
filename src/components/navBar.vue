@@ -4,10 +4,16 @@
 
     <ul>
       <li>
+        <RouterLink to="/inicio/:id">Inicio</RouterLink>
+      </li>
+      <li>
         <RouterLink to="/">Passagens</RouterLink>
       </li>
       <li>
         <RouterLink to="/about">Hotéis</RouterLink>
+      </li>
+      <li>
+        <RouterLink to="/pacote/:id">Pacotes</RouterLink>
       </li>
     </ul>
   </nav>

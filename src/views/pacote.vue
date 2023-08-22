@@ -2,6 +2,14 @@
 import pacotes from '@/components/pacotes/pacotes.vue';
 </script>
 <template>
-<pacotes></pacotes>
+<div class="cards">
+    <pacotes></pacotes>
+</div>
 </template>
-<style scoped></style>
+<style scoped>
+.cards {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+
+}
+</style>

@@ -16,7 +16,7 @@ import MButton from '../MButton.vue';
         <h1>{{ hotel.title }}</h1>
         <p>{{ hotel.name }}</p>
         <MButton @click="$router.push({name: 'hotel', params: { id: hotel.id }})"></MButton>
-      </div>
+      </div>  
 
 </div>
      <div class="descricao">
