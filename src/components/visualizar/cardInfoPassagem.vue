@@ -131,7 +131,7 @@ onMounted(() => {
 
                     <p>Taxas e Impostos: {{ passagem.taxa }}</p>
 
-                    <comprar></comprar>
+                    <comprar @click="$router.push({name: 'confirmarCompra', params: { id: passagem.id }})" > </comprar>
                 </div>
 
             </div>

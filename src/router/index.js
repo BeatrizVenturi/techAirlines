@@ -5,6 +5,8 @@ import hotel from '@/views/hotel.vue'
 import pacote from '@/views/pacote.vue'
 import Descpacote from '@/views/Descpacote.vue'
 import inicio from '@/views/inicio.vue'
+import confirmarCompra from '@/views/confirmarCompra.vue'
+import minhasCompras from '@/views/minhasCompras.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +50,18 @@ const router = createRouter({
       path: '/inicio/:id',
       name: 'inicio',
       component: inicio,
+      props: true
+    },
+    {
+      path: '/confirmarCompra/:id',
+      name: 'confirmarCompra',
+      component: confirmarCompra,
+      props: true
+    },
+    {
+      path: '/minhasCompras/:id',
+      name: 'minhasCompras',
+      component: minhasCompras,
       props: true
     }
 
