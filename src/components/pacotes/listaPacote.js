@@ -2,7 +2,22 @@ export const listaPacote = [{
     id:1,
 name:'NOITE ROMANTICA EM PARIS',
 description: 'Paris, a famosa "Cidade do Amor," é um destino que exala romance em cada esquina. Com sua arquitetura encantadora, ruelas pitorescas, luzes brilhantes e gastronomia exquisita, a capital francesa é o cenário perfeito para uma noite inesquecível com aquela pessoa especial. Imagine-se imerso na atmosfera mágica de Paris enquanto vive uma experiência romântica única.',
-img:'https://i.pinimg.com/originals/fc/1a/a5/fc1aa5d2b2e39cf8c46fab0bee6fa3ba.jpg'
+img:'https://i.pinimg.com/originals/fc/1a/a5/fc1aa5d2b2e39cf8c46fab0bee6fa3ba.jpg',
+info:{
+    diaUm:{
+        manha:'Chegada ao Aeroporto Internacional de Chiang Mai, transfer para o hotel selecionado, localizado próximo ao local das celebrações',
+        tarde:'Check-in no hotel e breve descanso.Participação em um workshop de confecção de lanternas flutuantes, onde você aprenderá a montar suas próprias lanternas tradicionais.',
+        noite:'Jantar em um restaurante tailandês tradicional; Participe do emocionante Festival de Lanternas Flutuantes. Você terá a oportunidade de soltar sua lanterna no rio, juntamente com milhares de outras lanternas, criando uma cena de beleza e serenidade únicas.'
+    },
+    diaDois:{
+        manha:'Café da manhã no hotel.Visita a um dos templos mais emblemáticos de Chiang Mai, como o Wat Chedi Luang, para conhecer mais sobre a cultura tailandesa.',
+        tarde:'Almoço em um restaurante local.',
+        partida:'Check-out do hotel.Transfer de retorno para o Aeroporto Internacional de Chiang Mai.',
+        detalhes:'Acomodação em um hotel confortável próximo ao local das celebrações.Transfers do aeroporto para o hotel e retorno.Participação no workshop de confecção de lanternas flutuantes.Lanterna para soltar durante as celebrações.Refeições mencionadas no itinerário.',
+    }
+
+   
+}
 },
 {
     id:2,

@@ -1,8 +1,7 @@
 <script setup>
 import { defineProps, onMounted, ref } from 'vue';
 import { getPacotePorId } from '@/components/pacotes/listaPacote.js';
-import voltar from '@/components/visualizar/Voltar.vue';
-
+import voltarPacotes from './voltarPacotes.vue';
 
 const props = defineProps({
     id: String
@@ -11,7 +10,7 @@ const props = defineProps({
 const pacotes = ref({
         "name": null,
         "img": null,
-       
+        "description":null
 })
 
 
@@ -29,51 +28,61 @@ onMounted(() => {
  <div class="wrap-passagens">
 
 <div class="voltar">
-    <voltar></voltar>
+    <voltarPacotes></voltarPacotes>
 </div>
 
 <img :src="pacotes.img" alt="foto" class="foto-passagem" />
 
 </div>
+<div class="pacotes">
+    <div class="titulo">
+        <h1>{{ pacotes.name}}</h1>
+    </div>
+    <div class="info-pacote">
+
+    </div>
+</div>
+
 
 </template>
 <style scoped>
+.pacotes{
+    margin-top: 20px;
+}
+.info-pacote{
+  margin-top: -40px;
+    width: 790px;
+height: 524px;
+flex-shrink: 0;
+border-radius: 0px 0px 12px 12px;
+background: rgba(50, 83, 168, 0.63);
+}
 .voltar{
 margin-top: 10px;
 margin-left: 70px;
 margin-bottom: -40px;
 }
-
-
-a {
-display: block;
-width: 230px;
-height: 50px;
-line-height: 50px;
-font-weight: bold;
-text-decoration: none;
-background: #5E84E7;
+.titulo {
+color: #FFF;
 text-align: center;
-font-size: large;
-color: #fff;
-text-transform: uppercase;
-letter-spacing: 1px;
-border-radius: 50px;
-transition: all .35s;
+font-family: Bellefair;
+border-radius: 0px 12px 0px 0px;
+background: #3253A8;
+margin-top: 54px;
+;
 }
+h1 {
 
-a:hover {
-/* width: 200px; */
-border: 3x solid #5E84E7;
-background: transparent;
-color: #ffffff;
-}
-
-
-
-* {
 font-family: Bellefair;
 }
+
+
+
+
+
+
+
+
 
 
 

@@ -129,16 +129,19 @@ onMounted(() => {
                 <div class="valores-viajante">
                     <p>Valor por viajante: {{ (passagem.price) }}</p>
 
-                    <p>Taxas e Impostos: {{ passagem.taxa }}</p>
-
-                    <comprar @click="$router.push({name: 'confirmarCompra', params: { id: passagem.id }})" > </comprar>
+                    <p>Taxas e Impostos: {{ passagem.taxa }}</p>                    
                 </div>
-
+<div class="botao">
+    <comprar @click="$router.push({name: 'confirmarCompra', params: { id: passagem.id }})" > </comprar>
+</div>
             </div>
         </div>
     </div>
 </template>
 <style scoped>
+.botao{
+    margin-left: 290px;
+}
 .voltar{
     margin-top: 10px;
     margin-left: 80px;
@@ -330,5 +333,8 @@ h1 {
     width: 583px;
     height: 100px;
     margin-top: -40px;
+}
+.voo{
+    margin-top: 20px;
 }
 </style>

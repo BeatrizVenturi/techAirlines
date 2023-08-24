@@ -63,7 +63,8 @@ const router = createRouter({
       name: 'minhasCompras',
       component: minhasCompras,
       props: true
-    }
+    },
+    
 
   ]
 

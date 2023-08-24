@@ -3,7 +3,8 @@
 </script>
 <template>
     <div class="button-voltar">
-        <a href="#">COMPRAR</a>
+        <RouterLink to="/pacote/:id">Voltar</RouterLink>
+
     </div>
 </template>
 <style scoped>
@@ -14,7 +15,7 @@ a {
     line-height: 50px;
     font-weight: bold;
     text-decoration: none;
-    background: #5E84E7;
+    background: #3253A8;
     text-align: center;
     font-size: large;
     color: #fff;
@@ -24,11 +25,9 @@ a {
     transition: all .35s;
 }
 a:hover {
-   
-    border: 3x solid #5E84E7;
+    /* width: 200px; */
+    border: 3x solid #3253A8;
     background: transparent;
     color: #ffffff;
 }
-
-
 </style>

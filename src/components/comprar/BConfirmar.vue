@@ -3,7 +3,7 @@
 </script>
 <template>
     <div class="button-voltar">
-        <a href="#">COMPRAR</a>
+        <a href="#">CONFIRMAR</a>
     </div>
 </template>
 <style scoped>

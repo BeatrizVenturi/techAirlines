@@ -156,8 +156,8 @@
   {
     id: 6,
     title: 'BONITO',
-    origin: '',
-    destiny: '',
+    origin: 'Curitiba',
+    destiny: 'Barcelona',
     price: 1000.0,
     taxa: 400.00,
     img: 'https://www.umviajante.com.br/wp-content/uploads/2021/12/bonito-ms-top-passeios.jpg',
@@ -187,8 +187,8 @@
   {
     id: 7,
     title: 'FLORIANÓPOLIS',
-    origin: '',
-    destiny: '',
+    origin: 'São Paulo',
+    destiny: 'Londres',
     price: 1000.0,
     taxa: 400.00,
     img: 'https://i0.wp.com/turismodeprimeira.com.br/wp-content/uploads/2022/02/cropped-bridge-6851672_1920.jpg?resize=360%2C600&ssl=1',
@@ -218,11 +218,11 @@
   {
     id: 8,
     title: 'FOZ DO IGUAÇU',
-    origin: '',
-    destiny: '',
+    origin: 'São Paulo',
+    destiny: 'Havana-Cuba',
     price: 1000.0,
     taxa: 400.00,
-    img: 'https://w0.peakpx.com/wallpaper/427/588HD-wallpaper-cataratas-agua-cachoeira-fall-falls-foz-iguacu-nature-water-waterfall-thumbnail.jpg',
+    img: 'https://i.pinimg.com/736x/33/45/b1/3345b144f7f7c0a15b5121d6638bd818.jpg',
     ida: {
       data: '20/11/23',
       horario: '15:00h',
