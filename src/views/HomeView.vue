@@ -19,6 +19,7 @@ import CardPassagemMaisVendida from '@/components/menu/CardPassagemMaisVendida.v
 .title{
   background: #3253A8;
   border-radius: 30px;
+  text-align: center;
   color: white;
   font-family: Bellefair;
   width: 510px;
