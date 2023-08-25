@@ -38,7 +38,7 @@ const pagamento = ref('')
           <input type="password" placeholder="Senha:" v-model="senha" />
         </div>
         <div class="confirmar-senha">
-          <input type="password" placeholder="ConfirmarSenha:" v-model="confirmarSenha" />
+          <input type="password" placeholder="Confirmar Senha:" v-model="confirmarSenha" />
         </div>
         <button type="submit" class="btn btn-outline-primary">Cadastrar</button>
       </form>
@@ -62,21 +62,26 @@ const pagamento = ref('')
   align-items: center;
   color: #fff;
 }
+
 .title {
   border-radius: 10px;
   background: #3253a8;
-
+  text-align: center;
   width: 233px;
   height: 32px;
   align-items: center;
 }
+
 .valor-total {
+  text-align: center;
   background: rgba(50, 83, 168, 1);
   width: 96px;
   height: 94px;
   border-radius: 10px;
 }
+
 .card-confirmar-compra {
+  margin-top: 100px;
   width: 466px;
   height: 494px;
   margin-left: auto;
@@ -94,6 +99,7 @@ h1 {
   font-weight: 400;
   line-height: normal;
 }
+
 p {
   color: #fff;
   font-family: Bellefair;
@@ -102,6 +108,7 @@ p {
   font-weight: 400;
   line-height: normal;
 }
+
 input {
   background: rgba(50, 83, 168, 1);
   border-radius: 10px;
@@ -111,8 +118,8 @@ input {
   height: 25px;
   margin-top: 20px;
 }
+
 input::placeholder {
   color: #fff;
   font-size: 19px;
-}
-</style>
+}</style>

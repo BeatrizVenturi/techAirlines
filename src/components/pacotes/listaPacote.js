@@ -1,6 +1,6 @@
 export const listaPacote = [{
     id:1,
-name:'NOITE ROMANTICA EM PARIS',
+name:'NOITE ROMÂNTICA EM PARIS',
 description: 'Paris, a famosa "Cidade do Amor," é um destino que exala romance em cada esquina. Com sua arquitetura encantadora, ruelas pitorescas, luzes brilhantes e gastronomia exquisita, a capital francesa é o cenário perfeito para uma noite inesquecível com aquela pessoa especial. Imagine-se imerso na atmosfera mágica de Paris enquanto vive uma experiência romântica única.',
 img:'https://i.pinimg.com/originals/fc/1a/a5/fc1aa5d2b2e39cf8c46fab0bee6fa3ba.jpg',
  valor:20450,

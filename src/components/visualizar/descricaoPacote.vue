@@ -2,6 +2,8 @@
 import { defineProps, onMounted, ref } from 'vue'
 import { getPacotePorId } from '@/components/pacotes/listaPacote.js'
 import voltarPacotes from './voltarPacotes.vue'
+import comprar from '@/components/comprar/Comprar.vue';
+ 
 
 const props = defineProps({
   id: String
@@ -77,33 +79,58 @@ onMounted(() => {
           <ul>
             <li>
               {{ pacotes.info.diaDois.detalhes }}
+              
             </li>
           </ul>
+        </div>
+        <div class="valor">
+         <button>R${{ pacotes.valor }},00</button>
+        </div>
+        <div class="comprar">
+<comprar></comprar>
         </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
+.valor{
+  margin-bottom: 20px;
+}
+.comprar{
+  margin-left: 320px;
+  
+    
+}
+button{
+  margin-top: 10px;
+  background-color: #3253a8;
+  border-style: none;
+  font-size: 30px;
+  color: #fff;
+  font-family: Bellefair;
+margin-left: 350px;
+border-radius: 10px;
+
+}
 li {
-  font-size: 20px;
+  font-size: 19px;
   color: #fff;
   font-family: Bellefair;
   text-align: justify;
-  margin-top: 20px;
+  margin-top: 12px;
 }
-
 .info-pacote {
   width: 790px;
-  height: 772px;
+  height: 859px;
   border-radius: 0px 0px 12px 0px;
-  margin-top: -40px;
+  margin-top: -33px;
   background: rgba(50, 83, 168, 0.63);
   margin-bottom: auto;  
   padding-right: 10px;
 }
 .pacotes {
-  margin-top: 34px;
+  margin-top: 40px;
 }
 .voltar {
   margin-top: 10px;
@@ -122,21 +149,18 @@ li {
 h1 {
   font-family: Bellefair;
 }
-
 .wrap-passagens {
   display: inline-block;
   position: relative;
 }
-
 .wrap-passagens figcaption {
   position: absolute;
 
   color: black;
   text-shadow: 0px 0px 5px black;
 }
-
 .foto-passagem {
-  width: 783px;
+  width: 773px;
   height: 910px;
 }
 
@@ -147,16 +171,15 @@ p {
   font-family: Bellefair;
   font-weight: 400;
   line-height: normal;
-  padding-left: 125px;
+
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-family: Bellefair;
 }
 
 .foto-passagem {
-  flex-shrink: 0;
   border-radius: 12px 0px 0px 12px;
   margin-left: 55px;
   margin-top: 54px;
