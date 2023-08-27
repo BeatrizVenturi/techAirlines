@@ -15,6 +15,9 @@
       <li>
         <RouterLink to="/pacote/:id">Pacotes</RouterLink>
       </li>
+       <li>
+        <RouterLink to="/centralAjuda/:id">Central De Ajuda</RouterLink>
+      </li>
     </ul>
   </nav>
 </template>

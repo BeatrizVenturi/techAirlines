@@ -7,6 +7,11 @@ import Descpacote from '@/views/Descpacote.vue'
 import inicio from '@/views/inicio.vue'
 import confirmarCompra from '@/views/confirmarCompra.vue'
 import minhasCompras from '@/views/minhasCompras.vue'
+import centralAjuda from '@/views/centralAjuda.vue'
+import reembolso from '@/views/reembolso.vue'
+import PagNaoEfet from '@/views/PagNaoEfet.vue'
+import mudancaData from '@/views/mudancaData.vue'
+import politCria from '@/views/politCria.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -64,7 +69,38 @@ const router = createRouter({
       component: minhasCompras,
       props: true
     },
-    
+    {
+      path: '/centralAjuda/:id',
+      name: 'centralAjuda',
+      component: centralAjuda,
+      props: true
+    },
+    {
+      path: '/reembolso/:id',
+      name: 'reembolso',
+      component: reembolso,
+      props: true
+    },
+    {
+      path: '/PagNaoEfet/:id',
+      name: 'PagNaoEfet',
+      component: PagNaoEfet,
+      props: true
+    },
+    {
+      path: '/mudancaData/:id',
+      name: 'mudancaData',
+      component: mudancaData,
+      props: true
+    },
+    {
+      path: '/politCria/:id',
+      name: 'politCria',
+      component: politCria,
+      props: true
+    }
+
+
 
   ]
 
