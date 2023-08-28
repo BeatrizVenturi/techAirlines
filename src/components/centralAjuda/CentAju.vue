@@ -19,15 +19,16 @@
             <RouterLink to="/politCria/:id">POLÍTICA PARA CRIANÇAS</RouterLink>
 
         </div>
-    </div>
-    <div class="final">
+        
         <p>CASO SEU PROBELMA NÃO TENHA SIDO RESOLVIDO, LIGUE PARA O (11)1874-2987 OU MANDE MENSAGEM NO NOSSO CHAT</p>
+    
     </div>
+   
 </template>
 <style scoped>
 .card-centrAju {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
 }
 
 a {
@@ -47,5 +48,12 @@ a {
     letter-spacing: 1px;
     border-radius: 50px;
     transition: all .35s;
+}
+p {
+font-size: 25px;
+color: #FFF;
+font-family: Bellefair;
+
+
 }
 </style>
