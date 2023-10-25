@@ -23,24 +23,19 @@ import MButton from '@/components/MButton.vue';
 <style scoped>
 .card-passagensMenu {
   background-color: rgba(50, 83, 168, 0.63);
-  margin: 35px 55px;
-  padding: 10px;
+  margin: 25px 65px;
+    padding: 10px;
   border-radius: 10px;
   width: 250px;
   color: rgba(255, 255, 255, 1);
   color: #fff;
-  font-family: Bellefair;
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .card-passagensMenu .title {
-  
   margin-bottom: 1px;
   font-size: xx-large;
-  font-family: Bellefair;
 }
 
 .foto-passagem {

@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import navBar from '@/components/navBar.vue'
+
 </script>
 
 <template>
@@ -8,32 +9,7 @@ import navBar from '@/components/navBar.vue'
     <navBar></navBar>
   </header>
   <main>
-    <div class="box">
-      <div class="imagem-tech">
-        <img src="@/assets/img/TECHT.png" alt="" width="130px" height="125px">
-      </div>
-      <div class="imagem-passagem">
-        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
-        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
-      </div>
-      <div class="imagem-passagem">
-        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
-        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
-      </div>
-      <div class="imagem-passagem">
-        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
-        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
-      </div>
-      <div class="imagem-passagem">
-        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
-        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
-      </div>
-      <div class="imagem-passagem">
-        <img src="@/assets/img/MEGAOFERTA.png" alt="" width="150px" height="150px">
-        <p>PASSAGENS AÈREAS COM 50% DE DESCONTO</p>
-      </div>
-
-    </div>
+    <img><img>
     <RouterView />
   </main>
 </template>
@@ -41,7 +17,7 @@ import navBar from '@/components/navBar.vue'
 <style scoped>
 main {
   display: flex;
-  flex-direction: row;
+  
 }
 p{
   text-align: center;

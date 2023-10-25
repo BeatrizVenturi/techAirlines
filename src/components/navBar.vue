@@ -23,7 +23,7 @@
 </template>
 <style scoped>
 nav {
-  margin-left: 185px;
+ 
   background: #3253a8;
   margin-top: -10px;
 }
